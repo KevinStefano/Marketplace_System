@@ -1,4 +1,4 @@
-public class KolamRenang extends Fasilitas {
+public class KolamRenang implements Fasilitas {
     Properti prop;
 
     public KolamRenang () {

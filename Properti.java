@@ -3,12 +3,13 @@ import java.util.ArrayList;
 public abstract class Properti{
     protected String deskripsi;
     protected int hargaDasar;
-    protected ArrayList<Fasilitas> listFasilitas;
-
+    protected int jumlah;
+    protected ArrayList<Fasilitas> listFasilitas = new ArrayList<>();
+    
     public Properti(String deskripsi, int hargaDasar) {
         this.deskripsi = deskripsi;
         this.hargaDasar = hargaDasar;
-        this.listFasilitas = new ArrayList<Fasilitas>();
+        this.jumlah = 1;
     }
 
     public void setDeskripsi(String desk) {
@@ -28,7 +29,11 @@ public abstract class Properti{
     }
 
     public  int getJumlah() {
-        return 1;
+        return jumlah;
+    }
+
+    public void setJumlah(int jumlah) {
+        this.jumlah = jumlah;
     }
 
     public void addFasilitas(Fasilitas fasilitas) {

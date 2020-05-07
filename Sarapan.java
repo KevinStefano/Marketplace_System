@@ -1,5 +1,5 @@
 
-public class Sarapan extends Fasilitas{
+public class Sarapan implements Fasilitas{
     private int harga;
 
     public Sarapan (int harga) {

@@ -1,5 +1,5 @@
 
-abstract class Fasilitas{
-    public abstract String getDeskripsi();
-    public abstract int kalkulasiHarga();
+interface Fasilitas{
+    public String getDeskripsi();
+    public int kalkulasiHarga();
 }

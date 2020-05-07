@@ -5,12 +5,12 @@ public class Kamar_homestay extends Properti {
 
     public Kamar_homestay(int hargaDasar, int jumlahKamar) {
         super("Kamar_homestay", hargaDasar);
+        super.setJumlah(jumlahKamar);
         this.jumlahKamar = jumlahKamar;
         this.listFasilitas = new ArrayList<>();
     }
     
-
-    public void setJumlahKamar(int jumlah) {
+    public void setJumlah(int jumlah) {
         this.jumlahKamar = jumlah;
     }
 

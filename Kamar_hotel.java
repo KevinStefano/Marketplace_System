@@ -7,12 +7,13 @@ public class Kamar_hotel extends Properti {
 
     public Kamar_hotel(int hargaDasar, int jumlahKamar, Tipe tipe) {
         super("Kamar_hotel "+tipe, hargaDasar);
+        super.setJumlah(jumlahKamar);
         this.jumlahKamar = jumlahKamar;
         this.tipe = tipe;
         this.listFasilitas = new ArrayList<Fasilitas>();
     }
     
-    public void setJumlahKamar(int jumlah) {
+    public void setJumlah(int jumlah) {
         this.jumlahKamar = jumlah;
     }
 

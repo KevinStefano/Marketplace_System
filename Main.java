@@ -5,11 +5,12 @@ public class Main {
 
         //Add Pemilik
         System.out.println("-------PEMILIK--------");
-        registry.addPemilik("Kevin", new Kamar_hotel_builder(400000, 10, Tipe.standar)
-            .addKolamRenang()
-            .addSarapan(80000)
-            .build());
-        
+        Properti kamar_hotel_1 = new Kamar_hotel(400000, 10, Tipe.standar);
+        kamar_hotel_1 = new SarapanDecorator(kamar_hotel_1,80000);
+        kamar_hotel_1 = new KolamRenangDecorator(kamar_hotel_1);
+        registry.addPemilik("Kevin", kamar_hotel_1);
+
+
         registry.addPemilik("Kevin", new Kamar_hotel_builder(600000, 3, Tipe.deluxe)
             .addKolamRenang()
             .addSarapan(80000)

@@ -15,6 +15,10 @@ public class Unit_apartemen extends Properti {
         this.jumlahKamarTidur = jumlahKamarTidur;
     }
 
+    public int getJumlahKamarTidur() {
+        return jumlahKamarTidur;
+    }
+
     @Override
     public int kalkulasiHarga() {
         return this.hargaDasar;
